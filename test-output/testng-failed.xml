@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="pdfngreport-properties" value="pdfngreport.properties"/>
+  <listeners>
+    <listener class-name="com.uttesh.pdfngreport.PDFReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Test.Test">
+        <methods>
+          <include name="setup"/>
+          <include name="test_Home_Page_Appear_Correct"/>
+        </methods>
+      </class> <!-- Test.Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
